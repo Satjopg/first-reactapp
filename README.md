@@ -48,10 +48,17 @@ const className = "title"
 ```
 
 下記のコードはDOMに描画する要素を作成する。  
-`React.createElement('h1', { className: 'title' }, "Hello, World!!")`  
+
+```javascript
+React.createElement('h1', { className: 'title' }, "Hello, World!!")
+```
 
 さっきのコードは以下のように書き換えられる。  
-`<h1 className={className}>Hello, {name}</h1>`  
+
+```javascript
+<h1 className={className}>Hello, {name}</h1>
+```  
+
 {}で囲うことで外部変数を参照できる。  
 ウェブページ上の要素としての可読性が高くなる。  
 
