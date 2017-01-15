@@ -20,6 +20,7 @@ http://localhost:3000 を開いて画面が描画されたら構築完了！！
 # DOMに描画してみる
 初期状態だと少し分かり辛いので、  
 index.jsを書き換える。  
+
 ```javascript:index.js
 import React from 'react';
 import { render } from 'react-dom';
@@ -38,13 +39,16 @@ render (
 
 ## 書き方
 以下のように定数を定義しておく.  
+
 ```index.js:javascript
 const name = "your name"
 const className = "title"
 ```
 
+下記のコードはDOMに描画する要素を作成する。  
 `React.createElement('h1', { className: 'title' }, "Hello, World!!")`  
-上記はJSXを使ってこのように書き換えられる。  
+
+さっきのコードは以下のように書き換えられる。  
 `<h1 className={className}>Hello, {name}</h1>`  
 {}で囲うことで外部変数を参照できる。  
 ウェブページ上の要素としての可読性が高くなる。  
