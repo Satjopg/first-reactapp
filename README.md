@@ -71,4 +71,22 @@ React.createElement('h1', { className: 'title' }, "Hello, World!!")
 ウェブページ上の要素としての可読性が高くなる。  
 
 # Componentを作って使う
-* HelloMessageというComponentを作成して表示させる。
+## Componetとは
+素の意味は「部品」だが、そのイメージでオッケー。ReactはComponentを組み合わせてUIを作り上げる。
+## 作る
+一番簡単な作り方はjavascriptの関数を使えばできる。下記はHelloMessageというComponentが作成される関数である。  
+**HelloMessage.js**  
+```javascript
+function HelloMessage(props) {
+  return <p>Hello, {props.name}</p>
+}
+```
+propsは外部の変数がまとめて入ったものとか、そんなイメージで今はおけ。  
+**props.name** は外部から指定されたname属性の変数を参照にしているということ。  
+これで、Componentが作られる。
+## 使う
+HTMLタグのように指定して使うことができる。
+```javascript
+<HelloMessage name="hoge"/>
+```
+ここで指定したnameがpropsを介して参照することができる！
