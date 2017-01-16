@@ -67,7 +67,7 @@ React.createElement('h1', { className: 'title' }, "Hello, World!!")
 <h1 className={className}>Hello, {name}</h1>
 ```  
 
-{}で囲うことで外部変数を参照できる。  
+変数を参照したい時は{}で囲う。  
 ウェブページ上の要素としての可読性が高くなる。  
 
 # Componentを作って使う
