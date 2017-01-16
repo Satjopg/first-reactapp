@@ -2,13 +2,16 @@ import React, {PropTypes} from "react";
 
 /**
 * Componetの定義
-* 描画したいものを返す。
+* 描画したいものを定義する。
 * propsで外部からの値を参照。
 * この場合、外部から受け取ったname属性の値を参照している。
+* ちなみにComponentの定義は他にも存在する。
+* 例1: var MyComponent = React.createClass({...})(チュートリアルのやり方その１)
+* 例2: class MyComponent extends React.Component {}(デフォルトで作られるやつ)
 */
 
 function HelloMessage(props) {
-  return <p>Hello, {props.name}!</p>
+  return <p>Hello, {props.name}</p>
 }
 
 /**

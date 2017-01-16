@@ -3,7 +3,9 @@ import React from 'react';
 import { render } from 'react-dom';
 // 相対パスでファイルを読み込める。
 import './index.css';
-import HelloMessage from "./HelloMessage";
+// jsファイルは拡張子いらない
+import App from "./App";
+//import HelloMessage from "./HelloMessage";
 
 /*
 const name = "your name"
@@ -37,10 +39,15 @@ JSX: javascriptの中にHTMLタグが書けるように拡張した言語
 * name属性を指定する場合としない場合の２つを表示する。
 */
 
+/*
   <div>
     <HelloMessage />
     <HelloMessage name="everyone" />
   </div>,
+*/
+
+// Appコンポーネントを描画
+  <App />,
 
 // rederのターゲットを指定する。index.htmlのroot(id)に描画するよってことになる。
   document.getElementById('root')

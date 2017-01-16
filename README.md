@@ -8,19 +8,19 @@
 手順  
 1. Node.js(ver4以上)をインストール(済みの人は飛ばしてOK):  
 ```
-brew install node
+$ brew install node
 ```  
 2. npmを利用して、create-react-appをインストール  
 ```
-npm install -g create-react-app
+$ npm install -g create-react-app
 ```
 3. 作りたい場所で、下記のコマンドを実行(XXX:任意のファイル名)  
 ```
-create-react-app XXX
+$ create-react-app XXX
 ```  
 4. 作成したディレクトリの内部に移動し、サーバーを実行  
 ```
-npm start
+$ npm start
 ```  
 
 http://localhost:3000 を開いて画面が描画されたら構築完了！！
